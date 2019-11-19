@@ -1,0 +1,499 @@
+/* classes */
+.dontDisplay {
+	display: none;
+}
+.flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.flexContainerNoWrap {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.logoImg {
+	display: block;
+	max-width: 100px;
+	width: 100%;
+	margin: 8px 0px 0px 2px;
+}
+.topnav {
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    color: #99C9CF;
+    background-color: #444;
+}
+.topnav a.active {
+    color: #fff;
+    background-color: #444;
+}
+.topnav .icon {
+    display: none;
+}
+.verticalAlign {
+	margin: auto;
+	text-align: center;
+}
+.bannerHeader {
+	display: flex;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.bannerAbouts {
+	text-align: center;
+	margin: auto;
+	padding: 0px 2% 0px 0px;
+}
+
+.locationMarks {
+	align-items: center;
+	margin: 0px 0px 1% 0px;
+}
+.locationMarks h3 {
+	color: #fff;
+}
+.checkMarks {
+	display: block;
+	max-width: 20px;
+	width: 100%;
+	margin: 2% 8% 0% 2%;
+	max-height: 20px;
+}
+.services {
+	width: 30%;
+	text-align: center;
+}
+.serviceIcons {
+	display: block;
+	max-width: 120px;
+	width: 90%;
+	margin: auto;
+}
+.sectionMargin {
+	padding: 2% 4% 2% 4%;
+}
+.footNavItem {
+	width: 30%;
+}
+.flexAt {
+	display: block;
+}
+
+/* Sub Page Classes */
+.bannerOverlay {
+	width: 100%;
+	background-color:rgba(153,201,207,0.7);
+	margin: 0px;
+	min-height: 80px;
+}
+.bannersHeader {
+	font-size: 2.4rem;
+}
+.headerIntroContainer {
+	background-color: #444;
+}
+.headerIntro {
+	margin-bottom: 2%;
+	font-size: 1.8rem;
+	color: #99C9CF;
+}
+.subheader {
+	margin-top: 0px;
+	color: #fff;
+}
+.faqText {
+	color: #444;
+}
+.locationBox {
+	width: 99%;
+	margin: auto;
+	background-color: #444;
+	color: #fff;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 3px;
+}
+.locationBox h3 {
+	margin:0px;
+	color: #99C9CF;
+}
+.locationBox a {
+	color: #fff;
+	margin-bottom: 2%;
+}
+.hoursBox {
+	width: 94%;
+	margin: 2% auto auto auto;
+}
+.mapBoxContainer {
+	margin: 2% auto 2% auto;
+    width: 94%;
+    max-width: 600px;
+    max-height: 450px;
+    padding-bottom: 2%;
+}
+.mapBox {
+	position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.mapBox iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+/* ids */
+#branding {
+	width: 75%;
+}
+#headerName {
+	font-family: museo-slab, serif;
+	font-weight: 300;
+	font-style: normal;
+}
+#headerImg {
+	width: 80%;
+	margin: auto;
+	justify-content: space-between;
+}
+#headerImg h1 {
+	font-size: 2rem;
+	margin-left: 3%;
+	width: 75%;
+}
+#imageBanner {
+	min-height: 300px;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 75% 25%;
+	margin: auto;
+	text-align: center;
+	background-image: url(assets/banner.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #f2f2f2;
+}
+#bannerAboutsContainer {
+	background-color:rgba(153,201,207,0.7);
+	color: #333;
+}
+#reviewCircle {
+	max-width: 400px;
+	width: 90%;
+	position: absolute;
+	top: 6%;
+	left: 10%;
+	filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.4));
+}
+#locationsReview {
+	background-color: #444;
+	margin: 0px;
+	color: #99c9cf;
+}
+#reviewCircleContainer {
+	width: 50%;
+	position: relative;
+}
+#locationsContainer {
+	width: 30%;
+	margin: 0px 1% 0px 2%;
+}
+#servicesContainer {
+	padding-top: 17%;
+}
+#servicesOffered{
+	background-color: #fff;
+	padding-bottom: 2%;
+}
+#faqCallout {
+	margin: 15% auto 10% auto;
+	width: 70%;
+	max-width: 290px;
+	background-color: #99C9Cf;
+	text-align: center;
+	border-radius: 40px;
+	border: 2px solid #444;
+	padding: 5px 3px 5px 3px;
+	filter: drop-shadow(2px 2px 5px rgba(68,68,68,0.4));
+}
+#faqCallout h3 {
+	margin: 0px;
+}
+#about{
+	padding-bottom: 0px;
+	color: #99C9CF;
+	text-align: center;
+	background-color: #444;
+}
+
+#girlImg {
+	display: block;
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+	filter: drop-shadow(3px -3px 16px rgba(0,0,0,0.4));
+}
+#faceBookIcon {
+	margin: 2% auto 4% auto;
+	display: block;
+	max-width: 50px;
+	width: 100%;
+}
+#footerNav {
+	width: 90%;
+	margin: auto;
+	justify-content: center;
+}
+
+/* FAQ Page ids */
+#faqBanner {
+	background-image: url(assets/faqBanner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* Location Page ids */
+#locationsBanner {
+	background-image: url(assets/locationsBanner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+   /* HTML Elements */
+
+html {
+	font-size: 100%;
+}
+nav {
+	align-self: flex-end;
+}
+a {
+	text-decoration: none;
+	color: #333;
+
+}
+
+h1 {
+	font-family: whitman-display, serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.6rem;
+	letter-spacing: .25px;
+}
+h2 {
+	font-family: museo-slab, serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 1.2rem;
+}
+h3 {
+	font-family: museo-slab, serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 1rem;
+}
+p {
+	font-family: museo-slab, serif;
+	font-weight: 100;
+	font-style: normal;
+	color: #fff;
+}
+header {
+	margin: 0px;
+	height: auto;
+	padding: 0px;
+	background-color: #99C9CF;
+	border-bottom: 2px solid #444444;
+}
+body {
+	background-color: #fff;
+	
+	margin: auto;
+	padding: 0;
+	color: #333;
+}
+footer {
+	background-color: #fff;
+	margin: 0;
+	text-align: center;
+	font-size: 1rem;
+	padding: .25%;
+	border-top: 2px solid #99C9CF;
+}
+footer p {
+	color: #444;
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+    	display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+    	position: relative;
+    }
+    .topnav.responsive .icon {
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  }
+    .topnav.responsive a {
+     	float: none;
+    	display: block;
+    	text-align: left;
+  }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+    	font-size: 120%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    	font-size: 120%;
+	}
+	.bannersHeader {
+		font-size: 2.8rem;
+	}
+	.bannerHeaderText {
+		font-size: 2.2rem;
+	}
+	.bannerAbouts {
+		font-size: 75%;
+	}
+	h1 {
+		font-size: 1.8rem;
+	}
+	#headerImg h1 {
+		font-size: 2.4rem;
+	}
+	#reviewCircle {
+	width: 90%;
+	position: absolute;
+	top: 1%;
+	left: 30%;	
+	}
+}
+@media screen and (min-width: 1000px) {
+    body {
+    	font-size: 140%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    	font-size: 140%;
+	}
+	.locationBox {
+		padding: 2%;
+	}
+	.bannersHeaderText {
+		font-size: 3rem;
+	}
+	.headerIntro {
+		font-size: 2.6rem;
+	}
+	.flexAt {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.bannerHeaderText {
+		font-size: 3rem;
+	}
+	.maxWidth {
+		max-width: 1200px;
+		margin: auto;
+	}
+	.logoImg {
+	display: block;
+	max-width: 100px;
+	width: 100%;
+	}
+	
+	#about {
+		text-align: left;
+	}
+	h1 {
+		font-size: 2.8rem;
+	}
+	#reviewCircleContainer {
+		position: static;
+		margin-left: 30%;
+
+	}
+	#reviewCircle {
+		position: static;
+		top: 0;
+		left: 0;
+		max-width: 800px;
+		width: 100%;
+		margin: auto;
+
+	}
+	#faqCallout {
+		margin: 9% auto 9% auto;
+	}
+	#servicesContainer {
+		padding-top: 8%;
+	}
+	#imageBanner {
+		min-height: 600px;
+	}
+	
+}
+@media screen and (min-width: 1300px) {
+    body {
+    	font-size: 160%;
+    }
+    .bannersHeader {
+		font-size: 3.2rem;
+	}
+    .headerIntro {
+		font-size: 2.8rem;
+	}
+	.flexAt {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	
+	.bannerHeaderText {
+		font-size: 3.2rem;
+	}
+	#headerImg h1 {
+		font-size: 2.9rem;
+	}
+	#locationsReview {
+		padding: .5% 1% 1% 1%;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+	
+	
+}
+@media screen and (min-width: 1500px) {
+    
+	#headerImg h1 {
+	}
+	
+}
