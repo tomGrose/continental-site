@@ -1,12 +1,13 @@
+$(document).ready(function() {
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+	$(".burger-nav").on("click", function() {
+
+		$("header nav ul").toggleClass("open");
+	});
+});
+$( "#exitPopup" ).click(function() {
+	var t = document.getElementById("popup");
+  	t.className += " dontDisplay";
+});
 var date = new Date();
 document.getElementById("copy").innerHTML = "&copy Continental Cleaners " + date.getFullYear();
-

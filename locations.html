@@ -14,37 +14,28 @@
 	</head>
     <body>
 	    <header >
-	    	<div id="headerImg" class="flexContainer">
-	    		<div id="branding" class="flexContainer">
-		    		<a href="index.html"><img class="logoImg" src="assets/favicon.png" alt="Continental Cleaners Logo"></a>
-		    		<h1 id="headerName">Continental Cleaners</h1>
-	    		</div>
-	    		<nav role="navigation">
+	    	<div id="headerContainer" class="">
+		    	<a href="index.html"><img class="logoImg" src="assets/logo.png" alt="Continental Cleaners Logo"></a>
+	    		<nav>
+	    			<a class="burger-nav"></a>
 			    	<h2 class="dontDisplay">Navigation</h2>
-			    	<div class="topnav" id="myTopnav">
-		    			<a href="index.html">Home</a>
-		    			<a href="faq.html">FAQ</a>
-		    			<a href="locations.html">Locations</a>
-		  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		    				<i class="fa fa-bars"></i>
-		    			</a>
-					</div>
+			    	<ul>
+		    			<li><a href="index.html">Home</a></li>
+		    			<li><a href="faq.html">FAQ</a></li>
+		    			<li><a href="locations.html">Locations</a></li>
+		    		</ul>
 			    </nav>
-	    		
 	    	</div>
 	    </header>
 	    <div role="main" id="pageContent">
 		    <div role="banner" id="locationsBanner" class="">
 		    	<div class="bannerOverlay">
 		    		<div class="sectionMargin">
-		    			<h1 class="bannersHeader">Locations</h1>
+		    			<h1 class="headerIntro">Find a Location Near You</h1>
+		    			<h3 class="subheader">We are probably right around the block.</h3>
 		    		</div>
 		    	</div>
 		    </div>
-		    <section  class="sectionMargin headerIntroContainer">
-		    	<h1 class="headerIntro">Find a Location Near You</h1>
-		    	<h3 class="subheader">We are probably right around the block.</h3>
-			</section>
 		    <section class="sectionMargin maxWidth">
 		    	<h2>Littleton</h2>
 		    	<p class="faqText">
@@ -91,29 +82,7 @@
 				    </div>
 		    	</div>
 			</section>
-			<section  class="sectionMargin maxWidth">
-		        <h2>Lakewood</h2>
-		    	<p class="faqText">
-			    	Located next to Bel Mar Mall, we have been serving this community for over 20 years.
-		    	</p>
-		    	<div class="locationBox flexAt">
-		    		<div class="hoursBox">
-			    		<h3>Hours</h3>
-			    		<p>
-			    			Monday - Friday: 7am - 6-30pm<br>
-			    			Saturday: 9am - 4:00pm<br>
-			    			Sunday: Closed
-			    		</p>
-			    		<a class="telAndAddress" href="tel:1-303-937-1662">1-303-937-1662</a><br><br>
-			    		<a class="telAndAddress" href="https://goo.gl/maps/EcS8cZQgo8nvUz4b8">605 South Wadswoth Blvd, Lakewood, CO 80226</a>
-			    	</div>
-			    	<div class="mapBoxContainer">
-				    	<div class="mapBox">
-				    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49136.32758864598!2d-105.11356892513321!3d39.671754008394366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27d4eab25ffdf4d7!2sContinental%20Cleaners!5e0!3m2!1sen!2sus!4v1570834312204!5m2!1sen!2sus" width="250" height="150" style="border:0;" allowfullscreen=""></iframe>
-				    	</div>
-				    </div>
-		    	</div>
-			</section>
+			
 			<footer>
 				<h3>Check our Facebook for our Newest Promotions and Coupons</h3>
 				<a href=""><img id="faceBookIcon" src="assets/facebook.png" alt="Facebook icon"></a>
@@ -125,6 +94,9 @@
 				<p id="copy"></p>
 	    	</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
 		<script src="scripts.js"></script>
     </body>
 </html>

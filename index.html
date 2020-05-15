@@ -14,36 +14,37 @@
 	</head>
     <body>
 	    <header >
-	    	<div id="headerImg" class="flexContainer">
-	    		<div id="branding" class="flexContainer">
-		    		<a href="index.html"><img class="logoImg" src="assets/favicon.png" alt="Continental Cleaners Logo"></a>
-		    		<h1 id="headerName">Continental Cleaners</h1>
-	    		</div>
-	    		<nav role="navigation">
+	    	<div id="headerContainer" class="">
+		    	<a href="index.html"><img class="logoImg" src="assets/logo.png" alt="Continental Cleaners Logo"></a>
+	    		<nav>
+	    			<a class="burger-nav"></a>
 			    	<h2 class="dontDisplay">Navigation</h2>
-			    	<div class="topnav" id="myTopnav">
-		    			<a href="index.html">Home</a>
-		    			<a href="faq.html">FAQ</a>
-		    			<a href="locations.html">Locations</a>
-		  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		    				<i class="fa fa-bars"></i>
-		    			</a>
-					</div>
+			    	<ul>
+		    			<li><a href="index.html">Home</a></li>
+		    			<li><a href="faq.html">FAQ</a></li>
+		    			<li><a href="locations.html">Locations</a></li>
+		    		</ul>
 			    </nav>
-	    		
 	    	</div>
 	    </header>
+	    <div id="popup">
+			<button id="exitPopup">Exit</button>
+			<h2>We are Currently Running on Limited Hours Due to COVID-19</h2>
+			<h2>Our Littleton location is now open from 8AM to 5PM</h2>
+			<h2>Our Golden location is now open from 9AM to 5PM</h2>
+			<h3>We are very sorry for any inconvenience this may cause. From all of us at Continental Cleaners we hope you stay safe and that you continue to trust us with all of your laundry and dry cleaning needs.</h3>
+	    </div>
 	    <div role="main" id="pageContent">
 		    <div role="banner" id="imageBanner">
 		    	<div class="bannerHeader">
-		    		<h1 class="verticalAlign bannerHeaderText">Expect More from Your Cleaners</h1>
+		    		<h1 class="verticalAlign bannerHeaderText">Expect More From Your Cleaners</h1>
 		    	</div>
 			    <div class="flexContainerNoWrap" id="bannerAboutsContainer">
 			    	<div class="bannerAbouts">
 			    		<h3 class="verticalAlign">34 Years of Cleaning Experience</h3>
 			    	</div>
 			    	<div class="bannerAbouts">
-			    		<h3 class="verticalAlign">3 Locations</h3>
+			    		<h3 class="verticalAlign">2 Locations</h3>
 			    	</div>
 			    	<div class="bannerAbouts">
 			    		<h3 class="verticalAlign">Family Owned and Operated</h3>
@@ -52,11 +53,13 @@
 		    </div>
 		    <section id="about" class="sectionMargin">
 		    	<div class="maxWidth">
-			        <h1>Feel as good in your clothes as you do about them</h1>
 			        <div class="flexAt">
-							<p>
-								For over 30 years we have taken pride in being Littleton's, Lakewood's, and Golden's premier affordable cleaners. We have seen these communities change and grow, and so have we. We can't wait to be your new go to cleaner, so come by and say hi, we will make sure to treat your clothes with the same respect we show you.
-							</p>
+							<div>
+			       				<h1>Feel as good in your clothes as you do about them.</h1>
+								<p>
+									For over 30 years we have taken pride in being Littleton's, Lakewood's, and Golden's premier affordable cleaners. We have seen these communities change and grow, and so have we. We can't wait to be your new go to cleaner, so come by and say hi, we will make sure to treat your clothes with the same respect we show you.
+								</p>
+							</div>
 						<img id="girlImg" src="assets/girlInSweater.png" alt="Girl waring a sweater">
 					</div>
 				</div>
@@ -96,30 +99,46 @@
 				    </div>
 				</a>
 			</section>
-			<section id="locationsReview" class="sectionMargin">
-		    	<div class="maxWidth">
-			    	<h1>Three Convenient Locations</h1>
-			    	<div class="flexContainerNoWrap">
-				    	<div id="locationsContainer">
-					    	<section class="locationMarks flexContainerNoWrap">
-					    		<img class="checkMarks" src="assets/checkmark.png" alt="Check Mark Icon">
-						        <h3 class="">Littleton</h3>
-					    	</section>
-					    	<section class="locationMarks flexContainerNoWrap">
-						        <img class="checkMarks" src="assets/checkmark.png" alt="Check Mark Icon">
-						        <h3 class="">Lakewood</h3>
-					        </section>
-					        <section class="locationMarks flexContainerNoWrap">
-						        <img class="checkMarks" src="assets/checkmark.png" alt="Check Mark Icon">
-						        <h3 class="">Golden</h3>
-					        </section>
-					    </div>
-				    	<div id="reviewCircleContainer">
-						    <img id="reviewCircle" src="assets/reviewCircle.png" alt="Five star review for Continental Cleaners">
-					    </div>
-					</div>
-				</div>
+			<section id="locationsReview" class="">
+		    	<h1>Three Convenient Locations</h1>
+		    	<section id="locationsContainerHome">
+			    	<div class="locationMarksHome">
+				        <div class="locationBoxHome">
+				    		<div class="indexHoursBox">
+						        <h2 class="">Littleton</h2>
+					    		<p>Hours</p>
+					    		<p>
+					    			Monday - Friday: 7am - 6-30pm<br>
+					    			Saturday: 9am - 4:00pm<br>
+					    			Sunday: Closed
+					    		</p>
+					    		<a class="telAndAddress" href="tel:1-303-979-0690">1-303-979-9690</a><br><br>
+					    		<a class="telAndAddress" href="https://goo.gl/maps/QWgCeUrCtD2X1Lb17">5066 South Wadswoth Blvd, Littleton, CO 80123</a>
+					    	</div>
+				    	</div>
+			    	</div>
+				    <div class="locationMarksHome">
+				        <div class="locationBoxHome">
+				    		<div class="indexHoursBox">
+						        <h2 class="">Golden</h2>
+					    		<p>Hours</p>
+					    		<p>
+					    			Monday - Friday: 7am - 6-30pm<br>
+					    			Saturday: 9am - 4:00pm<br>
+					    			Sunday: Closed
+					    		</p>
+					    		<a class="telAndAddress" href="tel:1-303-216-0078">1-303-216-0078</a><br><br>
+					    		<a class="telAndAddress" href="https://goo.gl/maps/cCb54JjvYFsRjhdz7">885 Lupine Street, Golden, CO 80401</a>
+					    	</div>
+				    	</div>
+				    </div>
+				</section>
 			</section>
+			<!--
+			<div id="reviewCircleContainer">
+				<img id="reviewCircle" src="assets/reviewCircle.png" alt="Five star review for Continental Cleaners">
+			</div>
+		-->
 			<footer>
 				<h3>Check our Facebook for our Newest Promotions and Coupons</h3>
 				<a href=""><img id="faceBookIcon" src="assets/facebook.png" alt="Facebook icon"></a>
@@ -131,6 +150,9 @@
 				<p id="copy"></p>
 	    	</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
 		<script src="scripts.js"></script>
     </body>
 </html>
