@@ -14,21 +14,16 @@
 	</head>
     <body>
 	    <header >
-	    	<div id="headerImg" class="flexContainer">
-	    		<div id="branding" class="flexContainer">
-		    		<a href="index.html"><img class="logoImg" src="assets/favicon.png" alt="Continental Cleaners Logo"></a>
-		    		<h1 id="headerName">Continental Cleaners</h1>
-	    		</div>
-	    		<nav role="navigation">
+	    	<div id="headerContainer" class="">
+		    	<a href="index.html"><img class="logoImg" src="assets/logo.png" alt="Continental Cleaners Logo"></a>
+	    		<nav>
+	    			<a class="burger-nav"></a>
 			    	<h2 class="dontDisplay">Navigation</h2>
-			    	<div class="topnav" id="myTopnav">
-		    			<a href="index.html">Home</a>
-		    			<a href="faq.html">FAQ</a>
-		    			<a href="locations.html">Locations</a>
-		  				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		    				<i class="fa fa-bars"></i>
-		    			</a>
-					</div>
+			    	<ul>
+		    			<li><a href="index.html">Home</a></li>
+		    			<li><a href="faq.html">FAQ</a></li>
+		    			<li><a href="locations.html">Locations</a></li>
+		    		</ul>
 			    </nav>
 	    	</div>
 	    </header>
@@ -36,39 +31,36 @@
 		    <div role="banner" id="faqBanner" class="">
 		    	<div class="bannerOverlay">
 		    		<div class="sectionMargin">
-		    			<h1 class="bannersHeader">FAQ</h1>
+		    			<h1 class="headerIntro">You Have Questions?</h1>
+		    			<h3 class="subheader">We have Answers</h3>
 		    		</div>
 		    	</div>
 		    </div>
-		    <section  class="sectionMargin headerIntroContainer">
-		    	<h1 class="headerIntro">You Have Questions?</h1>
-		    	<h3 class="subheader">We have Answers</h3>
-			</section>
-		    <section class="sectionMargin">
+		    <section class="sectionMargin faqAnswers">
 		    	<h2>What Should I Launder?</h2>
 		    	<p class="faqText">
 		    		Laundry is ideal for cotton dress shirts, as well as other cotton clothing. However, many other types of materials can also be laundered. With laundry the colors of your clothes will fade daster over time, however it is ideal for cleaning very dirty items. This is because laundry uses water as it's cleaning agent, which is superior for removing surface level stains and grime.
 		    	</p>
 			</section>
-		    <section  class="sectionMargin">
+		    <section  class="sectionMargin faqAnswers">
 		        <h2>What Should I Dry Clean?</h2>
 		    	<p class="faqText">
 		    		Dry cleaning is the superior cleaning method to keep your clothes looking the way they did when you bough them for longer. This is because of the way dry cleaning works. Your clothes are bathed in a solvent, which there are many types of out there, then heated rapidly so the solvent evaporates clinging to any oils, stains, or other types of grime and removing them. This is why dry cleaning is used with more difficult stains that laundry cannot remove. We are able to put additives onto stains that will cling on and remove the stain when evaporating. Dry cleaning should be done for dresses, suits, dress pants, delicate blouses, and more. If your garment has a care label with a circle on it, that means it is recommended to dry clean it. 
 		    	</p>
 			</section>
-			<section  class="sectionMargin">
+			<section  class="sectionMargin faqAnswers">
 		        <h2>Will Continental Cleaners Clean Leather?</h2>
 		    	<p class="faqText">
 			    	Unfortunately at this time we do not offer leather cleaning. However if you have a leather garment that needs cleaned we will be glad to direct you to a reputable cleaners that will.
 		    	</p>
 			</section>
-			<section  class="sectionMargin">
+			<section  class="sectionMargin faqAnswers">
 		        <h2>Do You Clean Wedding Dresses?</h2>
 		    	<p class="faqText">
 			    	Yes we do! For over 30 years we have been preserving wedding dresses. We even offer a specialty made storage box to keep your special dress in until it's time to get it out again. 
 		    	</p>
 			</section>
-			<section  class="sectionMargin">
+			<section  class="sectionMargin faqAnswers">
 		        <h2>Do You Clean Comforters?</h2>
 		    	<p class="faqText">
 			    	We also clean comforters! No matter what type of filling or color we have the expertise to get your comforter clean and comfy again.
@@ -85,6 +77,9 @@
 				<p id="copy"></p>
 	    	</footer>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  		crossorigin="anonymous"></script>
 		<script src="scripts.js"></script>
     </body>
 </html>
